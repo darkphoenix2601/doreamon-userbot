@@ -1,0 +1,84 @@
+{
+  "name": "Telegram Jarvis",
+  "description": "[GenBot] A modular Telegram userbot running on Python 3.8+ with a sqlalchemy database.",
+  "logo": "https://telegra.ph/file/4611d9629a8c64896992f.jpg",
+  "keywords": [
+    "telegram",
+    "userbot",
+    "plugin",
+    "modular",
+    "productivity"
+  ],
+  "repository": "https://github.com/vaibhavchandra13/GenBot",
+  "website": "https://telegra.ph/How-to-host-a-Telegram-Userbot-11-02",
+  "success_url": "https://t.me/GreyWolfXD",
+  "stack": "container",
+  "env": {
+    "API_KEY": {
+      "description": "Get this value at my.telegram.org.",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "Get this value at my.telegram.org.",
+      "required": true
+    },
+    "STRING_SESSION": {
+      "description": "Get this value by running [python3 string_session.py] in Termux or on the local system or use https://replit.com/@ErichDaniken/Generate-Telegram-String-Session.",
+      "required": true
+    },
+    "HEROKU_MEMEZ": {
+      "description": "This should be True if the userbot is running on a Heroku Dyno(Do not change).",
+      "value": "True",
+      "required": true
+    },
+    "HEROKU_API_KEY": {
+      "description": "Heroku API key, obtained from 'https://dashboard.heroku.com/account'",
+      "value": ""
+    },
+    "HEROKU_APP_NAME": {
+      "description": "Add the Heroku app name here.",
+      "required": true
+    },
+    "BOTLOG": {
+      "description": "In case you want to disable logging, put this False(Do not chnage)",
+      "value": "False"
+    },
+    "BOTLOG_CHATID": {
+      "description": "ChatID of the log group. Set it to '0' if BOTLOG = False and / or if LOGSPAMMER = False.",
+      "value": "0"
+    },
+    "CONSOLE_LOGGER_VERBOSE": {
+      "description": "If you need verbosity on the console logging",
+      "value": "False"
+    },
+    "PM_AUTO_BAN": {
+      "description": "PM automatic prohibition function switch.",
+      "value": "True"
+    },
+    "CLEAN_WELCOME": {
+      "description": "When a new person joins, the old welcome message is deleted.",
+      "value": "True"
+    },
+    "ALIVE_NAME": {
+      "description": "Display name in .alive message.",
+      "required": false
+    },
+    "ALIVE_LOGO": {
+      "description": "Show picture / logo in .alive message. Fill in image value of your link image, use telegra.ph to get your own image",
+      "value": "https://telegra.ph/file/4611d9629a8c64896992f.jpg",
+      "required": false
+    },
+    "LOGSPAMMER": {
+      "description": "Set this to True in case you want the error logs to be stored in the userbot log group, instead of spitting out the file in the current chat, requires a valid BOTLOG_CHATID to be set.",
+      "value": "True"
+    }
+  },
+  "addons": [
+    {
+      "plan": "heroku-postgresql",
+      "options": {
+        "version": "12"
+      }
+    }
+  ]
+}
