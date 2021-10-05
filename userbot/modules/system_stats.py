@@ -66,7 +66,7 @@ async def amireallyalive(alive):
         "`⊷⊷⊷⊷⊷⊷⊷⊷⊷⊷⊶⊷⊶⊶⊶⊶⊶`\n"
         f"•  👤 `Owner  :`  {DEFAULTUSER} \n"
         "`⊷⊷⊷⊷⊷⊷⊷⊷⊷⊷⊶⊷⊶⊶⊶⊶⊶`\n"
-        f"•  🤖 `GenBot   : v{USERBOT_VERSION} `\n"
+        f"•  🤖 `DoreamonBot   : v{USERBOT_VERSION} `\n"
         f"•  🗃 `Modules  : {len(modules)} `\n"
         f"•  🕒 `Online : {uptime} `\n"
         "`⊷⊷⊷⊷⊷⊷⊷⊷⊷⊷⊶⊷⊶⊶⊶⊶⊶`"
